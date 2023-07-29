@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header style="background-color: rgb(247, 231, 89); padding: 20px; text-align: center;">
+        <h1>Restaurant App</h1>
+    </header>
+
+    <div id="map-container">
+        <div id="map"></div>
+    </div>
+    
+    <div id="restaurant-list"></div>
+
+    <div id="pagination">
+        <button id="prev-btn" onclick="changePage(-1)" disabled>Previous</button>
+        <button id="next-btn" onclick="changePage(1)" disabled>Next</button>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGSUqFi7YKJJ9m_-yzVlZAeATBK8XWaFw&libraries=places&callback=initMap" async defer></script>
+</body>
+</html>
